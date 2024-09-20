@@ -4,7 +4,9 @@ export default function Home() {
     <>
       <Navbar />
       <div className="flex h-screen">
-        <div className="lg:w-1/4">1</div>
+        <div className="lg:w-1/4 flex items-center">
+          <div className=" h-96 w-96 border border-l-lime-400 border-t-lime-400 rounded-full border-transparent -m-40"></div>
+        </div>
         <div className="lg:w-2/4 flex items-center justify-center">
           <div className="w-3/4">
             <p className="text-center my-4">Hi there👋</p>
@@ -21,7 +23,9 @@ export default function Home() {
             </button>
           </div>
         </div>
-        <div className="lg:w-1/4">3</div>
+        <div className="lg:w-1/4 flex items-center justify-end">
+          <div className=" h-96 w-96 border border-l-lime-400 border-t-lime-400 rounded-full border-transparent -m-40"></div>
+        </div>
       </div>
       <h1 className="text-center">
         Hello world this is me and I a going to test this FIRST
