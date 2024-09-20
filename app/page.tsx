@@ -1,11 +1,15 @@
 import Navbar from "./ui/navbar";
+import Image from "next/image";
+import me from "@/app/me.png";
 export default function Home() {
   return (
     <>
       <Navbar />
       <div className="flex h-screen">
         <div className="lg:w-1/4 flex items-center">
-          <div className=" h-96 w-96 border border-l-lime-400 border-t-lime-400 rounded-full border-transparent -m-40"></div>
+          <div className=" h-96 w-96 border border-l-lime-400 border-t-lime-400 rounded-full border-transparent -m-40">
+            <Image src={me} width={500} height={500} alt="my image" />
+          </div>
         </div>
         <div className="lg:w-2/4 flex items-center justify-center">
           <div className="w-3/4">
