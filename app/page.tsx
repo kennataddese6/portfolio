@@ -1,6 +1,7 @@
 import Navbar from "./ui/navbar";
 import Image from "next/image";
 import me from "@/app/heroImage.png";
+import { FaCopy } from "react-icons/fa";
 
 export default function Home() {
   return (
@@ -19,8 +20,8 @@ export default function Home() {
             <button className="bg-orange-700 py-2 px-8 rounded-md">
               Hire me
             </button>
-            <button className="bg-zinc-900 mx-2 py-2 px-2 rounded-md text-zinc-400">
-              Copy Email
+            <button className="bg-zinc-900 mx-2 py-2 px-2 rounded-md text-zinc-400 inline-flex items-center">
+              Copy Email <FaCopy className="mx-2" />
             </button>
           </div>
         </div>
