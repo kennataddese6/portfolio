@@ -1,18 +1,20 @@
 export default function Navbar() {
   return (
-    <div className="fixed top-0 py-8 w-screen">
-      <nav className="flex  justify-between align-middle border border-gray-600  w-screen py-3 px-8  rounded-3xl mx-auto lg:w-3/4 backdrop-blur-2xl">
-        <div className="flex items-center">
-          <div className="w-2 h-2 bg-lime-400 rounded-full mx-2"></div>
-          <div className="text-2xl p-0">Kenna</div>
-        </div>
-        <ul className="flex items-center">
-          <li className="mx-8 text-lime-400 cursor-pointer">Home</li>
-          <li className="mx-8 hover:text-lime-400 cursor-pointer">About</li>
-          <li className="mx-8 hover:text-lime-400 cursor-pointer">Contact</li>
-          <li className="hover:text-lime-400 cursor-pointer">Hire Me</li>
-        </ul>
-      </nav>
-    </div>
+    <nav className="py-8 flex fixed w-full">
+      <ul className="border border-zinc-800  flex justify-between mx-auto  rounded-3xl w-auto backdrop-blur-md">
+        <li className="bg-zinc-800 px-12 py-2 m-1 rounded-3xl cursor-pointer text-zinc-200">
+          Home
+        </li>
+        <li className="px-12 py-2 m-1 rounded-3xl cursor-pointer text-zinc-400">
+          About
+        </li>
+        <li className="px-12 py-2 m-1 rounded-3xl cursor-pointer text-zinc-400">
+          Projects
+        </li>
+        <li className="px-12 py-2 m-1 rounded-3xl cursor-pointer text-zinc-400">
+          Contact
+        </li>
+      </ul>
+    </nav>
   );
 }
