@@ -21,10 +21,10 @@ export default function Home() {
                   Architecting visionary experiences with precision to transform
                   ideas into exquisite, high-end products.
                 </p>
-                <button className="bg-purple-500 py-2 px-8 rounded-md text-white">
+                <button className="bg-purple-500 py-2 px-8 rounded-3xl text-white">
                   Hire me
                 </button>
-                <button className="bg-zinc-900 mx-2 py-2 px-3 rounded-md text-gray-400">
+                <button className="bg-zinc-900 mx-2 py-2 px-4 rounded-3xl text-gray-400">
                   Resume <MdDownload className="mx-1 inline" />
                 </button>
               </div>
