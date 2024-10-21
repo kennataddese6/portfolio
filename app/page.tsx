@@ -15,7 +15,7 @@ export default function Home() {
             <div className="w-full lg:w-1/2 flex items-center pl-7">
               <div>
                 <h1 className="text-4xl font-sans mb-5 font-bold text-white">
-                  My name is Kenna
+                  Hi, My name is <br /> Kenna
                 </h1>
                 <p className="my-4 text-gray-300 lg:w-11/12 xl:w-9/12">
                   Architecting visionary experiences with precision to transform
