@@ -1,6 +1,6 @@
 export default function Navbar() {
   return (
-    <nav className="flex sticky top-4 z-10">
+    <nav className="flex fixed lg:top-6 2xl:top-8 to w-full z-10">
       <ul className="border border-zinc-800 flex justify-between mx-auto  rounded-3xl w-auto backdrop-blur-md">
         <li className="bg-zinc-800 px-12 py-2 m-1 rounded-3xl cursor-pointer text-zinc-200">
           Home
