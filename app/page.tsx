@@ -1,8 +1,9 @@
 import Navbar from "./ui/navbar";
 import Image from "next/image";
 import me from "@/app/heroImage.png";
-import { FaCopy } from "react-icons/fa";
+import { FaCopy, FaDownload } from "react-icons/fa";
 import { BackgroundBeamsWithCollision } from "./ui/background-beams";
+import { MdDownload } from "react-icons/md";
 export default function Home() {
   return (
     <>
@@ -23,8 +24,8 @@ export default function Home() {
                 <button className="bg-purple-500 py-2 px-8 rounded-md text-white">
                   Hire me
                 </button>
-                <button className="bg-zinc-900 mx-2 py-2 px-2 rounded-md text-zinc-400 inline-flex items-center">
-                  Copy Email <FaCopy className="mx-2" />
+                <button className="bg-zinc-900 mx-2 py-2 px-3 rounded-md text-gray-400">
+                  Resume <MdDownload className="mx-1 inline" />
                 </button>
               </div>
             </div>
