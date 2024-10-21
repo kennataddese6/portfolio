@@ -12,13 +12,13 @@ export default function Home() {
         children={
           <section className="bg-zinc-800 flex flex-wrap rounded-md  xl:w-9/12">
             <div className="w-full lg:w-1/2 flex items-center pl-7">
-              <div className="">
-                <h1 className="text-4xl font-sans my-4 font-bold text-white">
+              <div>
+                <h1 className="text-4xl font-sans mb-5 font-bold text-white">
                   My name is Kenna
                 </h1>
                 <p className="my-4 text-gray-300 lg:w-11/12 xl:w-9/12">
-                  I create innovative experiences and bring ideas to life with
-                  great precision to bring high end products
+                  Architecting visionary experiences with precision to transform
+                  ideas into exquisite, high-end products.
                 </p>
                 <button className="bg-purple-500 py-2 px-8 rounded-md text-white">
                   Hire me
