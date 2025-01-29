@@ -30,9 +30,19 @@ export default {
       },
     },
   },
-  plugins: [addVariablesForColors],
+  plugins: [addVariablesForColors, addVariablesBeamForColors],
 } satisfies Config
 function addVariablesForColors({ addBase, theme }: any) {
+  let allColors = flattenColorPalette(theme("colors"))
+  let newVars = Object.fromEntries(
+    Object.entries(allColors).map(([key, val]) => [`--${key}`, val]),
+  )
+
+  addBase({
+    ":root": newVars,
+  })
+}
+function addVariablesBeamForColors({ addBase, theme }: any) {
   let allColors = flattenColorPalette(theme("colors"))
   let newVars = Object.fromEntries(
     Object.entries(allColors).map(([key, val]) => [`--${key}`, val]),
