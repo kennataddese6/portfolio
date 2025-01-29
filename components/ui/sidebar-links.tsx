@@ -2,16 +2,25 @@ import React from "react"
 import {
   IconArrowLeft,
   IconBrandTabler,
+  IconCube,
   IconSettings,
   IconUserBolt,
 } from "@tabler/icons-react"
+import { usePathname } from "next/navigation"
 const SidebarLinks = () => {
+  const pathname = usePathname()
   const links = [
     {
       label: "3D Card",
       href: "#",
       icon: (
-        <IconBrandTabler className="text-neutral-700 dark:text-neutral-200 h-5 w-5 flex-shrink-0" />
+        <IconCube
+          className={`h-5 w-5 flex-shrink-0 ${
+            pathname === "/ui"
+              ? "text-blue-700 dark:text-blue-700"
+              : "text-neutral-700 dark:text-neutral-200"
+          }`}
+        />
       ),
     },
     {
