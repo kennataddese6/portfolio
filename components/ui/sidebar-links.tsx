@@ -16,7 +16,7 @@ const SidebarLinks = () => {
       icon: (
         <IconCube
           className={`h-5 w-5 flex-shrink-0 ${
-            pathname === "/ui"
+            pathname === "/ui" || pathname === "/ui/3dcard-rotation"
               ? "text-blue-700 dark:text-blue-700"
               : "text-neutral-700 dark:text-neutral-200"
           }`}
