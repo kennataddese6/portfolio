@@ -6,8 +6,7 @@ import Image from "next/image"
 import { cn } from "@/lib/utils"
 import { Sidebar, SidebarBody, SidebarLink } from "@/components/ui/sidebar"
 import SidebarLinks from "@/components/ui/sidebar-links"
-
-export default function SidebarDemo() {
+export function SidebarDemo({ children }: { children: React.ReactNode }) {
   const links = SidebarLinks()
   const [open, setOpen] = useState(false)
   return (
@@ -47,7 +46,7 @@ export default function SidebarDemo() {
             </div>
           </SidebarBody>
         </Sidebar>
-        <Dashboard />
+        {children}
       </div>
     </div>
   )
@@ -79,14 +78,14 @@ export const LogoIcon = () => {
     </Link>
   )
 }
-
-// Dummy dashboard component with content
-const Dashboard = () => {
+export default function DasbaordLayout({
+  children,
+}: Readonly<{
+  children: React.ReactNode
+}>) {
   return (
-    <div className="flex flex-1">
-      <div className="p-2 md:p-10 rounded-tl-2xl border border-neutral-200 dark:border-neutral-700 bg-white dark:bg-neutral-900 flex flex-col gap-2 flex-1 w-full h-full">
-        <h1 className="text-white">This is Dasbhoard</h1>
-      </div>
-    </div>
+    <>
+      <SidebarDemo children={children} />
+    </>
   )
 }
