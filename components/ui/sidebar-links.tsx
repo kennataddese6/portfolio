@@ -7,6 +7,8 @@ import {
   IconUserBolt,
   IconLocation,
   IconPin,
+  IconList,
+  IconClipboard,
 } from "@tabler/icons-react"
 import { usePathname } from "next/navigation"
 const SidebarLinks = () => {
@@ -39,10 +41,16 @@ const SidebarLinks = () => {
       ),
     },
     {
-      label: "Settings",
-      href: "#",
+      label: "Animated Modal",
+      href: "/animated-modal",
       icon: (
-        <IconSettings className="text-neutral-700 dark:text-neutral-200 h-5 w-5 flex-shrink-0" />
+        <IconClipboard
+          className={`h-5 w-5 flex-shrink-0 ${
+            pathname === "/ui/animated-modal"
+              ? "text-blue-700 dark:text-blue-700"
+              : "text-neutral-700 dark:text-neutral-200"
+          }`}
+        />
       ),
     },
     {
