@@ -5,6 +5,8 @@ import {
   IconCube,
   IconSettings,
   IconUserBolt,
+  IconLocation,
+  IconPin,
 } from "@tabler/icons-react"
 import { usePathname } from "next/navigation"
 const SidebarLinks = () => {
@@ -12,7 +14,7 @@ const SidebarLinks = () => {
   const links = [
     {
       label: "3D Card",
-      href: "#",
+      href: "/ui",
       icon: (
         <IconCube
           className={`h-5 w-5 flex-shrink-0 ${
@@ -24,10 +26,16 @@ const SidebarLinks = () => {
       ),
     },
     {
-      label: "Profile",
-      href: "#",
+      label: "3D Pin",
+      href: "/ui/3dpin",
       icon: (
-        <IconUserBolt className="text-neutral-700 dark:text-neutral-200 h-5 w-5 flex-shrink-0" />
+        <IconPin
+          className={`h-5 w-5 flex-shrink-0 ${
+            pathname === "/ui/3dpin"
+              ? "text-blue-700 dark:text-blue-700"
+              : "text-neutral-700 dark:text-neutral-200"
+          }`}
+        />
       ),
     },
     {
