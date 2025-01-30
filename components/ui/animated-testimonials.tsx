@@ -51,6 +51,7 @@ export const AnimatedTestimonials = ({
               <AnimatePresence>
                 {testimonials.map((testimonial, index) => (
                   <motion.div
+                    suppressHydrationWarning
                     key={index}
                     initial={{
                       opacity: 0,
