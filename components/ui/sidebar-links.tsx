@@ -10,6 +10,7 @@ import {
   IconListCheck,
   IconClipboard,
   IconTipJar,
+  IconCards,
 } from "@tabler/icons-react"
 import { usePathname } from "next/navigation"
 const SidebarLinks = () => {
@@ -74,6 +75,19 @@ const SidebarLinks = () => {
         <IconTipJar
           className={`h-5 w-5 flex-shrink-0 ${
             pathname === "/ui/animated-tooltip"
+              ? "text-blue-700 dark:text-blue-700"
+              : "text-neutral-700 dark:text-neutral-200"
+          }`}
+        />
+      ),
+    },
+    {
+      label: "Card Spotlight",
+      href: "/ui/card-spotlight",
+      icon: (
+        <IconCards
+          className={`h-5 w-5 flex-shrink-0 ${
+            pathname === "/ui/card-spotlight"
               ? "text-blue-700 dark:text-blue-700"
               : "text-neutral-700 dark:text-neutral-200"
           }`}
