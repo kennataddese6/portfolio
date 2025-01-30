@@ -24,8 +24,8 @@ export default function HomeLayout({
       icon: <IconMap2 className="h-4 w-4 text-neutral-500 dark:text-white" />,
     },
     {
-      name: "Contact",
-      link: "/contact",
+      name: "Vortex1",
+      link: "/color-vortex",
       icon: (
         <IconMessage className="h-4 w-4 text-neutral-500 dark:text-white" />
       ),
