@@ -11,6 +11,7 @@ import {
   IconClipboard,
   IconTipJar,
   IconCards,
+  IconCardboards,
 } from "@tabler/icons-react"
 import { usePathname } from "next/navigation"
 const SidebarLinks = () => {
@@ -88,6 +89,19 @@ const SidebarLinks = () => {
         <IconCards
           className={`h-5 w-5 flex-shrink-0 ${
             pathname === "/ui/card-spotlight"
+              ? "text-blue-700 dark:text-blue-700"
+              : "text-neutral-700 dark:text-neutral-200"
+          }`}
+        />
+      ),
+    },
+    {
+      label: "Expandable Card",
+      href: "/ui/expandable-card",
+      icon: (
+        <IconCardboards
+          className={`h-5 w-5 flex-shrink-0 ${
+            pathname === "/ui/expandable-card"
               ? "text-blue-700 dark:text-blue-700"
               : "text-neutral-700 dark:text-neutral-200"
           }`}
