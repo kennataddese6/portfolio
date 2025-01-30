@@ -42,7 +42,7 @@ const SidebarLinks = () => {
     },
     {
       label: "Animated Modal",
-      href: "/animated-modal",
+      href: "/ui/animated-modal",
       icon: (
         <IconClipboard
           className={`h-5 w-5 flex-shrink-0 ${
