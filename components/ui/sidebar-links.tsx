@@ -12,6 +12,7 @@ import {
   IconTipJar,
   IconCards,
   IconCardboards,
+  IconMicroscope,
 } from "@tabler/icons-react"
 import { usePathname } from "next/navigation"
 const SidebarLinks = () => {
@@ -102,6 +103,19 @@ const SidebarLinks = () => {
         <IconCardboards
           className={`h-5 w-5 flex-shrink-0 ${
             pathname === "/ui/expandable-card"
+              ? "text-blue-700 dark:text-blue-700"
+              : "text-neutral-700 dark:text-neutral-200"
+          }`}
+        />
+      ),
+    },
+    {
+      label: "Showcase Lense",
+      href: "/ui/showcase-lens",
+      icon: (
+        <IconMicroscope
+          className={`h-5 w-5 flex-shrink-0 ${
+            pathname === "/ui/showcase-lens"
               ? "text-blue-700 dark:text-blue-700"
               : "text-neutral-700 dark:text-neutral-200"
           }`}
