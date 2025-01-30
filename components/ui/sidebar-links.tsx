@@ -7,7 +7,7 @@ import {
   IconUserBolt,
   IconLocation,
   IconPin,
-  IconList,
+  IconListCheck,
   IconClipboard,
 } from "@tabler/icons-react"
 import { usePathname } from "next/navigation"
@@ -54,10 +54,16 @@ const SidebarLinks = () => {
       ),
     },
     {
-      label: "Logout",
-      href: "#",
+      label: "Animated Testimonial",
+      href: "/ui/animated-testimonial",
       icon: (
-        <IconArrowLeft className="text-neutral-700 dark:text-neutral-200 h-5 w-5 flex-shrink-0" />
+        <IconListCheck
+          className={`h-5 w-5 flex-shrink-0 ${
+            pathname === "/ui/animated-testimonial"
+              ? "text-blue-700 dark:text-blue-700"
+              : "text-neutral-700 dark:text-neutral-200"
+          }`}
+        />
       ),
     },
   ]
