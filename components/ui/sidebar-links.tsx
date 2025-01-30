@@ -9,6 +9,7 @@ import {
   IconPin,
   IconListCheck,
   IconClipboard,
+  IconTipJar,
 } from "@tabler/icons-react"
 import { usePathname } from "next/navigation"
 const SidebarLinks = () => {
@@ -60,6 +61,19 @@ const SidebarLinks = () => {
         <IconListCheck
           className={`h-5 w-5 flex-shrink-0 ${
             pathname === "/ui/animated-testimonial"
+              ? "text-blue-700 dark:text-blue-700"
+              : "text-neutral-700 dark:text-neutral-200"
+          }`}
+        />
+      ),
+    },
+    {
+      label: "Animated Tooltip",
+      href: "/ui/animated-tooltip",
+      icon: (
+        <IconTipJar
+          className={`h-5 w-5 flex-shrink-0 ${
+            pathname === "/ui/animated-tooltip"
               ? "text-blue-700 dark:text-blue-700"
               : "text-neutral-700 dark:text-neutral-200"
           }`}
