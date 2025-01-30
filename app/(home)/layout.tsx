@@ -1,6 +1,6 @@
 "use client"
 import React from "react"
-import { IconHome, IconMessage, IconUser } from "@tabler/icons-react"
+import { IconHome, IconMessage, IconUser, IconMap2 } from "@tabler/icons-react"
 import { FloatingNav } from "@/components/ui/floating-navbar"
 export default function HomeLayout({
   children,
@@ -17,6 +17,11 @@ export default function HomeLayout({
       name: "Parallax",
       link: "/parallax",
       icon: <IconUser className="h-4 w-4 text-neutral-500 dark:text-white" />,
+    },
+    {
+      name: "Map",
+      link: "/map",
+      icon: <IconMap2 className="h-4 w-4 text-neutral-500 dark:text-white" />,
     },
     {
       name: "Contact",
