@@ -122,6 +122,19 @@ const SidebarLinks = () => {
         />
       ),
     },
+    {
+      label: "Logout",
+      href: "/",
+      icon: (
+        <IconArrowLeft
+          className={`h-5 w-5 flex-shrink-0 ${
+            pathname === "/"
+              ? "text-blue-700 dark:text-blue-700"
+              : "text-neutral-700 dark:text-neutral-200"
+          }`}
+        />
+      ),
+    },
   ]
   return links
 }
