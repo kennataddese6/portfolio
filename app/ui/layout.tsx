@@ -30,7 +30,7 @@ export function SidebarDemo({ children }: { children: React.ReactNode }) {
             <div>
               <SidebarLink
                 link={{
-                  label: "Manu Arora",
+                  label: "Kenna Taddese",
                   href: "#",
                   icon: (
                     <Image
