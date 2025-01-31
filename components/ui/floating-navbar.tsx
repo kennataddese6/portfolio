@@ -8,7 +8,7 @@ import {
 } from "framer-motion"
 import { cn } from "@/lib/utils"
 import Link from "next/link"
-
+import { usePathname } from "next/navigation"
 export const FloatingNav = ({
   navItems,
   className,
@@ -21,6 +21,8 @@ export const FloatingNav = ({
   className?: string
 }) => {
   const { scrollYProgress } = useScroll()
+
+  const pathname = usePathname()
 
   const [visible, setVisible] = useState(true)
 
@@ -68,8 +70,20 @@ export const FloatingNav = ({
               "relative dark:text-neutral-50 items-center flex space-x-1 text-neutral-600 dark:hover:text-neutral-300 hover:text-neutral-500",
             )}
           >
-            <span className="block sm:hidden">{navItem.icon}</span>
-            <span className="hidden sm:block text-sm">{navItem.name}</span>
+            <span
+              className={`block sm:hidden ${
+                pathname == navItem.link ? "text-blue-500" : ""
+              }`}
+            >
+              {navItem.icon}
+            </span>
+            <span
+              className={`hidden sm:block text-sm ${
+                pathname == navItem.link ? "text-blue-500" : ""
+              }`}
+            >
+              {navItem.name}
+            </span>
           </Link>
         ))}
         <Link href={"/ui"} className="no-underline">
