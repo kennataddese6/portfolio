@@ -30,7 +30,11 @@ export default {
       },
     },
   },
-  plugins: [addVariablesForColors, addVariablesBeamForColors],
+  plugins: [
+    addVariablesForColors,
+    addVariablesBeamForColors,
+    require("tailwindcss-animate"),
+  ],
 } satisfies Config
 function addVariablesForColors({ addBase, theme }: any) {
   let allColors = flattenColorPalette(theme("colors"))
