@@ -2,25 +2,31 @@ import { CardSpotlight } from "@/components/ui/card-spotlight"
 
 export default function CardSpotlightDemo() {
   return (
-    <div className="w-full h-full flex bg-black justify-center items-center">
-      <CardSpotlight className="h-96 w-96">
-        <p className="text-xl font-bold relative z-20 mt-2 text-white">
-          Authentication steps
-        </p>
-        <div className="text-neutral-200 mt-4 relative z-20">
-          Follow these steps to secure your account:
-          <ul className="list-none  mt-2">
-            <Step title="Enter your email address" />
-            <Step title="Create a strong password" />
-            <Step title="Set up two-factor authentication" />
-            <Step title="Verify your identity" />
-          </ul>
+    <div className="flex flex-1">
+      <div className="p-2 md:p-10 rounded-tl-2xl border border-neutral-200 dark:border-neutral-700 bg-white dark:bg-black flex flex-col gap-2 flex-1 w-full h-full">
+        <div className="w-full h-full bg-black flex ">
+          <div className="flex flex-row items-center justify-center mb-10 w-full">
+            <CardSpotlight className="h-96 w-96">
+              <p className="text-xl font-bold relative z-20 mt-2 text-white">
+                Authentication steps
+              </p>
+              <div className="text-neutral-200 mt-4 relative z-20">
+                Follow these steps to secure your account:
+                <ul className="list-none  mt-2">
+                  <Step title="Enter your email address" />
+                  <Step title="Create a strong password" />
+                  <Step title="Set up two-factor authentication" />
+                  <Step title="Verify your identity" />
+                </ul>
+              </div>
+              <p className="text-neutral-300 mt-4 relative z-20 text-sm">
+                Ensuring your account is properly secured helps protect your
+                personal information and data.
+              </p>
+            </CardSpotlight>
+          </div>
         </div>
-        <p className="text-neutral-300 mt-4 relative z-20 text-sm">
-          Ensuring your account is properly secured helps protect your personal
-          information and data.
-        </p>
-      </CardSpotlight>
+      </div>
     </div>
   )
 }
