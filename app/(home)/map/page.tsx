@@ -23,7 +23,7 @@ export default function WorldMapDemo() {
           </span>
         </p>
         <p className="text-sm md:text-lg text-neutral-500 max-w-2xl mx-auto py-4">
-          I love to work remotely with anyone from any background. Let's build
+          I love to work remotely with anyone from any background. Let us build
           something great together where ever you are!
         </p>
       </div>

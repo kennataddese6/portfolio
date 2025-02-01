@@ -28,7 +28,7 @@ export default function ExpandableCardDemo() {
     return () => window.removeEventListener("keydown", onKeyDown)
   }, [active])
 
-  useOutsideClick(ref as any, () => setActive(null))
+  useOutsideClick(ref, () => setActive(null))
 
   return (
     <div className="w-full h-full bg-black flex items-center">
