@@ -9,7 +9,7 @@ export default function HeroParallaxDemo() {
     </div>
   )
 }
-export const products = [
+export const products: { title: string; link: string; thumbnail: string }[] = [
   {
     title: "Moonbeam",
     link: "https://gomoonbeam.com",
