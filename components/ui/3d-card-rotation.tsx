@@ -108,7 +108,7 @@ export const CardItem = ({
   ...rest
 }: {
   as?: React.ElementType
-  children?: React.ReactNode // Ensure children is optional
+  children: React.ReactNode // ✅ Ensure children is defined
   className?: string
   translateX?: number | string
   translateY?: number | string
@@ -118,8 +118,8 @@ export const CardItem = ({
   rotateZ?: number | string
   [key: string]: any
 }) => {
-  const ref = useRef<HTMLElement>(null) // Use HTMLElement to support dynamic tags
-  const [isMouseEntered] = useMouseEnter()
+  const ref = useRef<HTMLElement>(null)
+  const [isMouseEntered] = useMouseEnter() ?? [false, () => {}]
 
   useEffect(() => {
     handleAnimations()
@@ -140,7 +140,7 @@ export const CardItem = ({
       className={cn("w-fit transition duration-200 ease-linear", className)}
       {...rest}
     >
-      {children ?? null} {/* Ensure children is not undefined */}
+      {children}
     </Tag>
   )
 }
