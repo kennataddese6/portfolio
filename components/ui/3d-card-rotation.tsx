@@ -118,7 +118,8 @@ export const CardItem = ({
   rotateZ?: number | string
   [key: string]: any
 }) => {
-  const ref = useRef<HTMLElement>(null)
+  const ref = useRef<HTMLDivElement>(null)
+
   const [isMouseEntered] = useMouseEnter() ?? [false, () => {}]
 
   useEffect(() => {
@@ -135,13 +136,13 @@ export const CardItem = ({
   }
 
   return (
-    <Tag
+    <div
       ref={ref}
       className={cn("w-fit transition duration-200 ease-linear", className)}
       {...rest}
     >
       {children}
-    </Tag>
+    </div>
   )
 }
 
