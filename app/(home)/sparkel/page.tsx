@@ -17,7 +17,7 @@ export default function SparklesPreview() {
         />
       </div>
       <h1 className="md:text-7xl text-3xl lg:text-6xl font-bold text-center text-white relative z-20">
-        Build great products
+        Let us build great things <br /> together.
       </h1>
     </div>
   )
