@@ -9,7 +9,7 @@ export default function ExpandableCardDemo() {
     null,
   )
   const ref = useRef<HTMLDivElement>(null)
-  const id = useId()
+  const id = Math.floor(Math.random() * 10)
 
   useEffect(() => {
     function onKeyDown(event: KeyboardEvent) {
