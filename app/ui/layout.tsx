@@ -7,38 +7,38 @@ import { cn } from "@/lib/utils"
 import { Sidebar, SidebarBody, SidebarLink } from "@/components/ui/sidebar"
 import SidebarLinks from "@/components/ui/sidebar-links"
 
-export const Logo = () => {
-  return (
-    <Link
-      href="#"
-      className="font-normal flex space-x-2 items-center text-sm text-black py-1 relative z-20"
-    >
-      <div className="h-5 w-6 bg-black dark:bg-white rounded-br-lg rounded-tr-sm rounded-tl-lg rounded-bl-sm flex-shrink-0" />
-      <motion.span
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        className="font-medium text-black dark:text-white whitespace-pre"
-      >
-        UI Collection
-      </motion.span>
-    </Link>
-  )
-}
-export const LogoIcon = () => {
-  return (
-    <Link
-      href="#"
-      className="font-normal flex space-x-2 items-center text-sm text-black py-1 relative z-20"
-    >
-      <div className="h-5 w-6 bg-black dark:bg-white rounded-br-lg rounded-tr-sm rounded-tl-lg rounded-bl-sm flex-shrink-0" />
-    </Link>
-  )
-}
 export default function DashboardLayout({
   children,
 }: Readonly<{
   children: React.ReactNode
 }>) {
+  const Logo = () => {
+    return (
+      <Link
+        href="#"
+        className="font-normal flex space-x-2 items-center text-sm text-black py-1 relative z-20"
+      >
+        <div className="h-5 w-6 bg-black dark:bg-white rounded-br-lg rounded-tr-sm rounded-tl-lg rounded-bl-sm flex-shrink-0" />
+        <motion.span
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          className="font-medium text-black dark:text-white whitespace-pre"
+        >
+          UI Collection
+        </motion.span>
+      </Link>
+    )
+  }
+  const LogoIcon = () => {
+    return (
+      <Link
+        href="#"
+        className="font-normal flex space-x-2 items-center text-sm text-black py-1 relative z-20"
+      >
+        <div className="h-5 w-6 bg-black dark:bg-white rounded-br-lg rounded-tr-sm rounded-tl-lg rounded-bl-sm flex-shrink-0" />
+      </Link>
+    )
+  }
   function SidebarDemo({ children }: { children: React.ReactNode }) {
     const links = SidebarLinks()
     const [open, setOpen] = useState(false)
