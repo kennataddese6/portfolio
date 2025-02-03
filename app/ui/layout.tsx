@@ -6,51 +6,7 @@ import Image from "next/image"
 import { cn } from "@/lib/utils"
 import { Sidebar, SidebarBody, SidebarLink } from "@/components/ui/sidebar"
 import SidebarLinks from "@/components/ui/sidebar-links"
-export function SidebarDemo({ children }: { children: React.ReactNode }) {
-  const links = SidebarLinks()
-  const [open, setOpen] = useState(false)
-  return (
-    <div className="bg-black w-full h-full">
-      <div
-        className={cn(
-          "rounded-md flex flex-col md:flex-row bg-gray-100 dark:bg-neutral-800 w-screen flex-1  mx-auto border border-neutral-200 dark:border-neutral-700 overflow-hidden",
-          "h-screen", // for your use case, use `h-screen` instead of `h-[60vh]`
-        )}
-      >
-        <Sidebar open={open} setOpen={setOpen}>
-          <SidebarBody className="justify-between gap-10">
-            <div className="flex flex-col flex-1 overflow-y-auto overflow-x-hidden">
-              {open ? <Logo /> : <LogoIcon />}
-              <div className="mt-8 flex flex-col gap-2">
-                {links.map((link, idx) => (
-                  <SidebarLink key={idx} link={link} />
-                ))}
-              </div>
-            </div>
-            <div>
-              <SidebarLink
-                link={{
-                  label: "Kenna Taddese",
-                  href: "#",
-                  icon: (
-                    <Image
-                      src={"/image.png"}
-                      className="h-7 w-7 flex-shrink-0 rounded-full"
-                      width={50}
-                      height={50}
-                      alt="Avatar"
-                    />
-                  ),
-                }}
-              />
-            </div>
-          </SidebarBody>
-        </Sidebar>
-        {children}
-      </div>
-    </div>
-  )
-}
+
 export const Logo = () => {
   return (
     <Link
@@ -83,6 +39,51 @@ export default function DasbaordLayout({
 }: Readonly<{
   children: React.ReactNode
 }>) {
+  function SidebarDemo({ children }: { children: React.ReactNode }) {
+    const links = SidebarLinks()
+    const [open, setOpen] = useState(false)
+    return (
+      <div className="bg-black w-full h-full">
+        <div
+          className={cn(
+            "rounded-md flex flex-col md:flex-row bg-gray-100 dark:bg-neutral-800 w-screen flex-1  mx-auto border border-neutral-200 dark:border-neutral-700 overflow-hidden",
+            "h-screen", // for your use case, use `h-screen` instead of `h-[60vh]`
+          )}
+        >
+          <Sidebar open={open} setOpen={setOpen}>
+            <SidebarBody className="justify-between gap-10">
+              <div className="flex flex-col flex-1 overflow-y-auto overflow-x-hidden">
+                {open ? <Logo /> : <LogoIcon />}
+                <div className="mt-8 flex flex-col gap-2">
+                  {links.map((link, idx) => (
+                    <SidebarLink key={idx} link={link} />
+                  ))}
+                </div>
+              </div>
+              <div>
+                <SidebarLink
+                  link={{
+                    label: "Kenna Taddese",
+                    href: "#",
+                    icon: (
+                      <Image
+                        src={"/image.png"}
+                        className="h-7 w-7 flex-shrink-0 rounded-full"
+                        width={50}
+                        height={50}
+                        alt="Avatar"
+                      />
+                    ),
+                  }}
+                />
+              </div>
+            </SidebarBody>
+          </Sidebar>
+          {children}
+        </div>
+      </div>
+    )
+  }
   return (
     <>
       <SidebarDemo children={children} />
