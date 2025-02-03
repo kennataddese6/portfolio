@@ -34,7 +34,7 @@ export const LogoIcon = () => {
     </Link>
   )
 }
-export default function DasbaordLayout({
+export default function DashboardLayout({
   children,
 }: Readonly<{
   children: React.ReactNode
