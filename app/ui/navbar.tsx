@@ -6,7 +6,7 @@ export default function Navbar() {
   const [showMobileNav, setShowMobileNav] = useState(false)
   return (
     <nav
-      className={`md:flex  fixed z-50 w-full md:justify-between md:py-8 md:px-20 px-8 py-6 bg-black md:bg-transparent  md:h-auto bg-[url(/navbg.png)] bg-no-repeat bg-[center_top_12rem] ${
+      className={`md:flex  fixed z-50 w-full md:justify-between md:py-8 md:px-20 px-4 py-6 bg-black md:bg-transparent  md:h-auto bg-[url(/navbg.png)] bg-no-repeat bg-[center_top_12rem] ${
         showMobileNav ? "h-screen animate-fadein" : ""
       }`}
     >
