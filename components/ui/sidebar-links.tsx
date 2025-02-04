@@ -136,6 +136,19 @@ const SidebarLinks = () => {
       ),
     },
     {
+      label: "Borders",
+      href: "/ui/borders",
+      icon: (
+        <IconSettings
+          className={`h-5 w-5 flex-shrink-0 ${
+            pathname === "/ui/borders"
+              ? "text-blue-700 dark:text-blue-700"
+              : "text-neutral-700 dark:text-neutral-200"
+          }`}
+        />
+      ),
+    },
+    {
       label: "Logout",
       href: "/",
       icon: (
