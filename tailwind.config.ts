@@ -1,38 +1,58 @@
-import type { Config } from 'tailwindcss';
-const defaultTheme = require('tailwindcss/defaultTheme');
-
-const colors = require('tailwindcss/colors');
+import type { Config } from "tailwindcss"
 const {
   default: flattenColorPalette,
-} = require('tailwindcss/lib/util/flattenColorPalette');
+} = require("tailwindcss/lib/util/flattenColorPalette")
 
-/** @type {import('tailwindcss').Config} */
-
-const config: Config = {
+export default {
   content: [
-    './pages/**/*.{js,ts,jsx,tsx,mdx}',
-    './components/**/*.{js,ts,jsx,tsx,mdx}',
-    './app/**/*.{js,ts,jsx,tsx,mdx}',
+    "./pages/**/*.{js,ts,jsx,tsx,mdx}",
+    "./components/**/*.{js,ts,jsx,tsx,mdx}",
+    "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
-  darkMode: 'class',
   theme: {
     extend: {
       colors: {
-        background: 'var(--background)',
-        foreground: 'var(--foreground)',
+        background: "var(--background)",
+        foreground: "var(--foreground)",
+      },
+      animation: {
+        aurora: "aurora 60s linear infinite",
+      },
+      keyframes: {
+        aurora: {
+          from: {
+            backgroundPosition: "50% 50%, 50% 50%",
+          },
+          to: {
+            backgroundPosition: "350% 50%, 350% 50%",
+          },
+        },
       },
     },
   },
-  plugins: [addVariablesForColors],
-};
+  plugins: [
+    addVariablesForColors,
+    addVariablesBeamForColors,
+    require("tailwindcss-animate"),
+  ],
+} satisfies Config
 function addVariablesForColors({ addBase, theme }: any) {
-  let allColors = flattenColorPalette(theme('colors'));
+  let allColors = flattenColorPalette(theme("colors"))
   let newVars = Object.fromEntries(
     Object.entries(allColors).map(([key, val]) => [`--${key}`, val]),
-  );
+  )
 
   addBase({
-    ':root': newVars,
-  });
+    ":root": newVars,
+  })
 }
-export default config;
+function addVariablesBeamForColors({ addBase, theme }: any) {
+  let allColors = flattenColorPalette(theme("colors"))
+  let newVars = Object.fromEntries(
+    Object.entries(allColors).map(([key, val]) => [`--${key}`, val]),
+  )
+
+  addBase({
+    ":root": newVars,
+  })
+}
