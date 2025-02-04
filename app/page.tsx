@@ -1,58 +1,27 @@
-import { IconHome, IconMap2, IconMessage, IconUser } from "@tabler/icons-react"
+import { inter } from "@/lib/font"
+import { MdDownload } from "react-icons/md"
 export default function Page() {
-  const navItems = [
-    {
-      name: "Home",
-      link: "/",
-      icon: <IconHome className="h-4 w-4 text-neutral-500 dark:text-white" />,
-    },
-    {
-      name: "Parallax",
-      link: "/parallax",
-      icon: <IconUser className="h-4 w-4 text-neutral-500 dark:text-white" />,
-    },
-    {
-      name: "Map",
-      link: "/map",
-      icon: <IconMap2 className="h-4 w-4 text-neutral-500 dark:text-white" />,
-    },
-    {
-      name: "Vortex1",
-      link: "/color-vortex",
-      icon: (
-        <IconMessage className="h-4 w-4 text-neutral-500 dark:text-white" />
-      ),
-    },
-    {
-      name: "Vortex2",
-      link: "/color-vortex2",
-      icon: (
-        <IconMessage className="h-4 w-4 text-neutral-500 dark:text-white" />
-      ),
-    },
-    {
-      name: "timelines",
-      link: "/timelines",
-      icon: (
-        <IconMessage className="h-4 w-4 text-neutral-500 dark:text-white" />
-      ),
-    },
-    {
-      name: "sparkel",
-      link: "/sparkel",
-      icon: (
-        <IconMessage className="h-4 w-4 text-neutral-500 dark:text-white" />
-      ),
-    },
-    {
-      name: "light",
-      link: "/background-light",
-      icon: (
-        <IconMessage className="h-4 w-4 text-neutral-500 dark:text-white" />
-      ),
-    },
-  ]
   return (
-    <div className="bg-black h-screen bg-[url(/mobileherobg.png)] md:bg-[url(/herobg.png)] bg-no-repeat w-full bg-cover"></div>
+    <div className="h-5/6 w-1/2 md:px-20  text-white flex items-center">
+      <div className="flex flex-col gap-4">
+        <h1
+          className={`md:text-5xl text-white font-semibold ${inter.className}`}
+        >
+          I am a Software Developer
+        </h1>
+        <p className="text-neutral-100">
+          I create and build fascinating applications and systems by solving
+          problems and bring newideas to life through hard work and consistency
+        </p>
+        <div>
+          <button className="bg-white text-black py-2 px-8 font-bold border-2 border-white text-sm">
+            Hire Me
+          </button>
+          <button className="md:mx-2 text-white py-2 px-5 font-bold border-2 border-white text-sm">
+            Resume <MdDownload className="inline " fontSize={16} />
+          </button>
+        </div>
+      </div>
+    </div>
   )
 }
