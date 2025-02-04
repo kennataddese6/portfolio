@@ -17,6 +17,7 @@ export default {
       },
       animation: {
         aurora: "aurora 60s linear infinite",
+        fadein: "fadein 0.3s linear",
       },
       keyframes: {
         aurora: {
@@ -25,6 +26,14 @@ export default {
           },
           to: {
             backgroundPosition: "350% 50%, 350% 50%",
+          },
+        },
+        fadein: {
+          from: {
+            opacity: "0",
+          },
+          to: {
+            opacity: "1",
           },
         },
       },
