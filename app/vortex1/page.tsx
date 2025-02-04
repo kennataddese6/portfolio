@@ -1,5 +1,4 @@
 import { Vortex } from "@/components/ui/vortex"
-import React from "react"
 
 export default function VortexDemo() {
   return (

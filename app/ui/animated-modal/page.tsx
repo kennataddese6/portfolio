@@ -1,12 +1,5 @@
 "use client"
 
-import React from "react"
-import Link from "next/link"
-import {
-  CardBody,
-  CardContainer,
-  CardItem,
-} from "@/components/ui/3d-card-rotation"
 import {
   Modal,
   ModalBody,
@@ -14,8 +7,8 @@ import {
   ModalFooter,
   ModalTrigger,
 } from "@/components/ui/animated-modal"
-import Image from "next/image"
 import { motion } from "framer-motion"
+import Image from "next/image"
 export default function Page() {
   const images = [
     "/image.png",

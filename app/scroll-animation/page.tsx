@@ -1,7 +1,6 @@
 "use client"
-import React from "react"
-import Image from "next/image"
 import { ContainerScroll } from "@/components/ui/container-scroll-animation"
+import Image from "next/image"
 
 export default function HeroScrollDemo() {
   return (

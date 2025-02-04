@@ -1,34 +1,34 @@
-"use client";
-import Image from "next/image";
-import React, { useEffect, useId, useRef, useState } from "react";
-import { AnimatePresence, motion } from "framer-motion";
-import { useOutsideClick } from "@/hooks/use-outside-click";
+"use client"
+import { useOutsideClick } from "@/hooks/use-outside-click"
+import { AnimatePresence, motion } from "framer-motion"
+import Image from "next/image"
+import { useEffect, useId, useRef, useState } from "react"
 
 export default function ExpandableCardDemo() {
   const [active, setActive] = useState<(typeof cards)[number] | boolean | null>(
-    null
-  );
-  const ref = useRef<HTMLDivElement>(null);
-  const id = useId();
+    null,
+  )
+  const ref = useRef<HTMLDivElement>(null)
+  const id = useId()
 
   useEffect(() => {
     function onKeyDown(event: KeyboardEvent) {
       if (event.key === "Escape") {
-        setActive(false);
+        setActive(false)
       }
     }
 
     if (active && typeof active === "object") {
-      document.body.style.overflow = "hidden";
+      document.body.style.overflow = "hidden"
     } else {
-      document.body.style.overflow = "auto";
+      document.body.style.overflow = "auto"
     }
 
-    window.addEventListener("keydown", onKeyDown);
-    return () => window.removeEventListener("keydown", onKeyDown);
-  }, [active]);
+    window.addEventListener("keydown", onKeyDown)
+    return () => window.removeEventListener("keydown", onKeyDown)
+  }, [active])
 
-  useOutsideClick(ref, () => setActive(null));
+  useOutsideClick(ref, () => setActive(null))
 
   return (
     <>
@@ -168,7 +168,7 @@ export default function ExpandableCardDemo() {
         ))}
       </ul>
     </>
-  );
+  )
 }
 
 export const CloseIcon = () => {
@@ -201,8 +201,8 @@ export const CloseIcon = () => {
       <path d="M18 6l-12 12" />
       <path d="M6 6l12 12" />
     </motion.svg>
-  );
-};
+  )
+}
 
 const cards = [
   {
@@ -225,7 +225,7 @@ const cards = [
           the music industry, earning a dedicated fan base and numerous
           accolades.
         </p>
-      );
+      )
     },
   },
   {
@@ -247,7 +247,7 @@ const cards = [
           singles that have garnered him a massive fan following both in India
           and abroad.
         </p>
-      );
+      )
     },
   },
 
@@ -270,7 +270,7 @@ const cards = [
           albums and singles that have garnered them a massive fan following
           both in the United States and abroad.
         </p>
-      );
+      )
     },
   },
   {
@@ -291,7 +291,7 @@ const cards = [
           numerous hit albums and singles that have garnered them a massive fan
           following both in the United Kingdom and abroad.
         </p>
-      );
+      )
     },
   },
   {
@@ -313,7 +313,7 @@ const cards = [
           India and abroad, solidifying Emraan Hashmi&apos;s status as a
           versatile actor.
         </p>
-      );
+      )
     },
   },
-];
+]

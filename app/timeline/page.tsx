@@ -1,6 +1,5 @@
 import { Timeline } from "@/components/ui/timeline"
 import Image from "next/image"
-import React from "react"
 
 export default function TimelineDemo() {
   const data = [

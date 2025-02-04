@@ -1,7 +1,7 @@
 "use client"
-import React from "react"
-import { IconHome, IconMessage, IconUser, IconMap2 } from "@tabler/icons-react"
 import { FloatingNav } from "@/components/ui/floating-navbar"
+import { IconHome, IconMap2, IconMessage, IconUser } from "@tabler/icons-react"
+import React from "react"
 export default function HomeLayout({
   children,
 }: {

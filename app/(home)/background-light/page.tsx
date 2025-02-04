@@ -1,8 +1,7 @@
 "use client"
 
-import { motion } from "framer-motion"
-import React from "react"
 import { AuroraBackground } from "@/components/ui/aurora-background"
+import { motion } from "framer-motion"
 
 export default function AuroraBackgroundDemo() {
   return (

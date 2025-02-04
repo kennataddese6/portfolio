@@ -1,18 +1,15 @@
-import React from "react"
 import {
   IconArrowLeft,
   IconBrandTabler,
-  IconCube,
-  IconSettings,
-  IconUserBolt,
-  IconLocation,
-  IconPin,
-  IconListCheck,
-  IconClipboard,
-  IconTipJar,
-  IconCards,
   IconCardboards,
+  IconCards,
+  IconClipboard,
+  IconCube,
+  IconListCheck,
   IconMicroscope,
+  IconPin,
+  IconSettings,
+  IconTipJar,
 } from "@tabler/icons-react"
 import { usePathname } from "next/navigation"
 const SidebarLinks = () => {

@@ -1,6 +1,5 @@
 "use client"
 import { HeroParallax } from "@/components/ui/hero-parallax"
-import React from "react"
 
 export default function HeroParallaxDemo() {
   const products: { title: string; link: string; thumbnail: string }[] = [

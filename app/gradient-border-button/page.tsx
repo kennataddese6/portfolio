@@ -1,6 +1,5 @@
 "use client"
 import { HoverBorderGradient } from "@/components/ui/hover-border-gradient"
-import React from "react"
 
 export default function HoverBorderGradientDemo() {
   return (

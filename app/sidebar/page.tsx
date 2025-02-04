@@ -1,11 +1,11 @@
 "use client"
-import React, { useState } from "react"
-import Link from "next/link"
-import { motion } from "framer-motion"
-import Image from "next/image"
-import { cn } from "@/lib/utils"
 import { Sidebar, SidebarBody, SidebarLink } from "@/components/ui/sidebar"
 import SidebarLinks from "@/components/ui/sidebar-links"
+import { cn } from "@/lib/utils"
+import { motion } from "framer-motion"
+import Image from "next/image"
+import Link from "next/link"
+import { useState } from "react"
 
 export default function SidebarDemo() {
   const links = SidebarLinks()

@@ -1,14 +1,5 @@
 "use client"
 
-import Image from "next/image"
-import React from "react"
-import Link from "next/link"
-import {
-  CardBody,
-  CardContainer,
-  CardItem,
-} from "@/components/ui/3d-card-rotation"
-import { AnimatedTestimonials } from "@/components/ui/animated-testimonials"
 import { AnimatedTooltip } from "@/components/ui/animated-tooltip"
 const Page = () => {
   const people = [

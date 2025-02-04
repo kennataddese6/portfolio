@@ -1,8 +1,7 @@
 "use client"
-import "../globals.css"
-import React from "react"
-import { motion } from "framer-motion"
 import { LampContainer } from "@/components/ui/lamp"
+import { motion } from "framer-motion"
+import "../globals.css"
 
 export default function LampDemo() {
   return (

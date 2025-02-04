@@ -1,7 +1,6 @@
 "use client"
-import React from "react"
-import { Button } from "@/components/ui/moving-border"
 import { HoverBorderGradient } from "@/components/ui/hover-border-gradient"
+import { Button } from "@/components/ui/moving-border"
 
 export default function MovingBorderDemo() {
   const AceternityLogo = () => {

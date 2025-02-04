@@ -1,20 +1,20 @@
-"use client";
+"use client"
 
-import React, { useRef, useState } from "react";
-import { AnimatePresence, motion } from "framer-motion";
+import { AnimatePresence, motion } from "framer-motion"
+import React, { useRef, useState } from "react"
 
 interface LensProps {
-  children: React.ReactNode;
-  zoomFactor?: number;
-  lensSize?: number;
+  children: React.ReactNode
+  zoomFactor?: number
+  lensSize?: number
   position?: {
-    x: number;
-    y: number;
-  };
-  isStatic?: boolean;
-  isFocusing?: () => void;
-  hovering?: boolean;
-  setHovering?: (hovering: boolean) => void;
+    x: number
+    y: number
+  }
+  isStatic?: boolean
+  isFocusing?: () => void
+  hovering?: boolean
+  setHovering?: (hovering: boolean) => void
 }
 
 export const Lens: React.FC<LensProps> = ({
@@ -26,29 +26,29 @@ export const Lens: React.FC<LensProps> = ({
   hovering,
   setHovering,
 }) => {
-  const containerRef = useRef<HTMLDivElement>(null);
+  const containerRef = useRef<HTMLDivElement>(null)
 
-  const [localIsHovering, setLocalIsHovering] = useState(false);
+  const [localIsHovering, setLocalIsHovering] = useState(false)
 
-  const isHovering = hovering !== undefined ? hovering : localIsHovering;
-  const setIsHovering = setHovering || setLocalIsHovering;
+  const isHovering = hovering !== undefined ? hovering : localIsHovering
+  const setIsHovering = setHovering || setLocalIsHovering
 
   // const [isHovering, setIsHovering] = useState(false);
-  const [mousePosition, setMousePosition] = useState({ x: 100, y: 100 });
+  const [mousePosition, setMousePosition] = useState({ x: 100, y: 100 })
 
   const handleMouseMove = (e: React.MouseEvent<HTMLDivElement>) => {
-    const rect = e.currentTarget.getBoundingClientRect();
-    const x = e.clientX - rect.left;
-    const y = e.clientY - rect.top;
-    setMousePosition({ x, y });
-  };
+    const rect = e.currentTarget.getBoundingClientRect()
+    const x = e.clientX - rect.left
+    const y = e.clientY - rect.top
+    setMousePosition({ x, y })
+  }
 
   return (
     <div
       ref={containerRef}
       className="relative overflow-hidden rounded-lg z-20"
       onMouseEnter={() => {
-        setIsHovering(true);
+        setIsHovering(true)
       }}
       onMouseLeave={() => setIsHovering(false)}
       onMouseMove={handleMouseMove}
@@ -122,5 +122,5 @@ export const Lens: React.FC<LensProps> = ({
         </AnimatePresence>
       )}
     </div>
-  );
-};
+  )
+}

@@ -1,9 +1,9 @@
 "use client"
 
-import { useRef } from "react"
-import { motion } from "motion/react"
 import DottedMap from "dotted-map"
+import { motion } from "motion/react"
 import Image from "next/image"
+import { useRef } from "react"
 
 interface MapProps {
   dots?: Array<{

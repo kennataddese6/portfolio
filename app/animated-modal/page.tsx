@@ -1,5 +1,4 @@
 "use client"
-import React from "react"
 import {
   Modal,
   ModalBody,
@@ -7,8 +6,8 @@ import {
   ModalFooter,
   ModalTrigger,
 } from "@/components/ui/animated-modal"
-import Image from "next/image"
 import { motion } from "framer-motion"
+import Image from "next/image"
 
 export default function AnimatedModalDemo() {
   const images = [
