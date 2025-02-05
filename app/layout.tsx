@@ -14,7 +14,7 @@ const geistMono = Geist_Mono({
 })
 
 export const metadata: Metadata = {
-  title: "Starter Web UI",
+  title: "Kenna T.",
   description: "To be used during project initalization",
 }
 
