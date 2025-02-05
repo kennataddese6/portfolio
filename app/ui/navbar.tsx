@@ -1,8 +1,11 @@
 "use client"
+import Link from "next/link"
+import { usePathname } from "next/navigation"
 import { useState } from "react"
 import { MdClose, MdMenu } from "react-icons/md"
 
 export default function Navbar() {
+  const pathname = usePathname()
   const [showMobileNav, setShowMobileNav] = useState(false)
   return (
     <nav
@@ -30,12 +33,25 @@ export default function Navbar() {
           showMobileNav ? "" : "hidden"
         }`}
       >
-        <li className="py-4 md:py-0 border-t-2 border-b-2 border-neutral-800 md:border-none">
-          Home
-        </li>
-        <li className="text-neutral-600 py-4 md:py-0  border-b-2 border-neutral-800 md:border-none">
-          About
-        </li>
+        <Link href={"/"} className="no-underline">
+          <li
+            className={`py-4 md:py-0 border-t-2 border-b-2 border-neutral-800 md:border-none ${
+              pathname === "/" ? "text-white" : "text-neutral-600 "
+            }`}
+          >
+            Home
+          </li>
+        </Link>
+
+        <Link href={"/about"} className="no-underline">
+          <li
+            className={` py-4 md:py-0  border-b-2 border-neutral-800 md:border-none ${
+              pathname === "/about" ? "text-white" : "text-neutral-600"
+            }`}
+          >
+            About
+          </li>
+        </Link>
         <li className="text-neutral-600 py-4 md:py-0  border-b-2 border-neutral-800 md:border-none">
           Projects
         </li>
