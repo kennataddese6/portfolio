@@ -1,7 +1,10 @@
+import { FlipWords } from "@/components/ui/flip-words"
 import { inter } from "@/lib/font"
 import Link from "next/link"
 import { MdOutlineDownload } from "react-icons/md"
+
 const Hero = () => {
+  const words = ["Developer", "Engineer", "Designer", "Tester"]
   return (
     <div className="h-5/6 xl:w-1/2 px-4 md:px-20  text-white flex items-center">
       <div className="flex flex-col gap-3 md:gap-4">
@@ -11,7 +14,8 @@ const Hero = () => {
         <h1
           className={`text-center xl:text-start text-4xl md:text-5xl  text-white font-semibold ${inter.className}`}
         >
-          I am a Software Developer
+          I&apos;m a Software
+          <FlipWords words={words} />
         </h1>
         <p className="text-neutral-100 text-xs md:text-base text-center xl:text-start">
           I create and build fascinating applications and systems by solving
