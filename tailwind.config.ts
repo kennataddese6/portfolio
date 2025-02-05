@@ -11,6 +11,9 @@ export default {
   ],
   theme: {
     extend: {
+      backgroundPosition: {
+        "y-80px": "center -166px",
+      },
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
