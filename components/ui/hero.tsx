@@ -4,7 +4,7 @@ import Link from "next/link"
 import { MdOutlineDownload } from "react-icons/md"
 
 const Hero = () => {
-  const words = ["Developer", "Engineer", "Designer", "Tester"]
+  const words = ["Developer", "Engineer", "Designer"]
   return (
     <div className="h-5/6 xl:w-1/2 px-4 md:px-20  text-white flex items-center">
       <div className="flex flex-col gap-3 md:gap-4">
