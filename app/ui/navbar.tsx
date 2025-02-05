@@ -36,7 +36,9 @@ export default function Navbar() {
         <Link href={"/"} className="no-underline">
           <li
             className={`py-4 md:py-0 border-t-2 border-b-2 border-neutral-800 md:border-none ${
-              pathname === "/" ? "text-white" : "text-neutral-600 "
+              pathname === "/"
+                ? "text-white animate-fadein"
+                : "text-neutral-600 "
             }`}
           >
             Home
@@ -46,7 +48,9 @@ export default function Navbar() {
         <Link href={"/about"} className="no-underline">
           <li
             className={` py-4 md:py-0  border-b-2 border-neutral-800 md:border-none ${
-              pathname === "/about" ? "text-white" : "text-neutral-600"
+              pathname === "/about"
+                ? "text-white animate-fadein"
+                : "text-neutral-600"
             }`}
           >
             About
