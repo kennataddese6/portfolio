@@ -9,7 +9,7 @@ const Hero = () => {
           Hi, This is Kenna
         </p>
         <h1
-          className={`text-center md:text-start text-5xl  text-white font-semibold ${inter.className}`}
+          className={`text-center md:text-start text-4xl md:text-5xl  text-white font-semibold ${inter.className}`}
         >
           I am a Software Developer
         </h1>
