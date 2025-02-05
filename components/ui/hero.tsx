@@ -1,4 +1,5 @@
 import { inter } from "@/lib/font"
+import Link from "next/link"
 import { MdOutlineDownload } from "react-icons/md"
 const Hero = () => {
   return (
@@ -17,12 +18,23 @@ const Hero = () => {
           problems and bring newideas to life through hard work and consistency
         </p>
         <div className=" flex justify-center md:justify-start">
-          <button className="bg-white text-black py-2 px-8 font-bold border-2 border-white text-sm">
-            Hire Me
-          </button>
-          <button className="mx-2 text-white py-2 px-5 font-bold border-2 border-white text-sm">
-            Resume <MdOutlineDownload className="inline " fontSize={16} />
-          </button>
+          <Link
+            href={"https://www.upwork.com/freelancers/~013312695998cc584d"}
+            target="_blank"
+          >
+            <button className="bg-white text-black py-2 px-8 font-bold border-2 border-white text-sm">
+              Hire Me
+            </button>
+          </Link>
+          <Link
+            href={"/KennaResume.pdf"}
+            download={true}
+            className="no-underline"
+          >
+            <button className="mx-2 text-white py-2 px-5 font-bold border-2 border-white text-sm">
+              Resume <MdOutlineDownload className="inline " fontSize={16} />
+            </button>
+          </Link>
         </div>
       </div>
     </div>
