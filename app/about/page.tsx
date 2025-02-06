@@ -4,37 +4,37 @@ export default function Page() {
   const testimonials = [
     {
       quote:
-        "I earned my Bachelor's degree in Computer Science from Jimma Institute of Technology, where I developed a strong foundation in programming",
+        "I earned my Bachelor's degree in Computer Science from Jimma Institute of Technology, where I developed a strong foundation in programming, data structure and algorithm, database and several Computer concepts.",
       name: "Education",
       designation: "BSc in Computer Science",
       src: "/image.png",
     },
     {
       quote:
-        "Implementation was seamless and the results exceeded our expectations. The platform's flexibility is remarkable.",
-      name: "Michael Rodriguez",
-      designation: "CTO at InnovateSphere",
+        "I am currently enrolled in the Meta Front-End Developer Professional Certificate program on Coursera taught by top professionals from Facebook equipping me with the most advanced web development skills",
+      name: "Education",
+      designation: "Meta Frontend Developer",
       src: "/image.png",
     },
     {
       quote:
-        "This solution has significantly improved our team's productivity. The intuitive interface makes complex tasks simple.",
-      name: "Emily Watson",
-      designation: "Operations Director at CloudScale",
+        "I am also currently enrolled in the IBM Full-Stack Software Developer Certificate program on Coursera, where I am broadening my expertise across all aspects of software development.",
+      name: "Education",
+      designation: "IBM Full-Stack developer",
       src: "/image.png",
     },
     {
       quote:
-        "Outstanding support and robust features. It's rare to find a product that delivers on all its promises.",
-      name: "James Kim",
-      designation: "Engineering Lead at DataPro",
+        "I have taken several YouTube courses provided by industry experts, allowing me to stay updated with the latest trends and refine my skills to match the most recent advancements of the GenZ.",
+      name: "Education",
+      designation: "YouTube Software Engineer",
       src: "/image.png",
     },
     {
       quote:
-        "The scalability and performance have been game-changing for our organization. Highly recommend to any growing business.",
-      name: "Lisa Thompson",
-      designation: "VP of Technology at FutureNet",
+        "I am currently working as a Software Developer at the Commercial Bank of Ethiopia, the largest bank in Ethiopia. In this role, I am responsible for developing and deploying various software solutions.",
+      name: "Experience",
+      designation: "Software Engineer at CBE",
       src: "/image.png",
     },
   ]
