@@ -90,9 +90,8 @@ export const AnimatedTestimonials = ({
                       ease: "easeInOut",
                       delay: 0.02 * index,
                     }}
-                    className="inline-block"
                   >
-                    {word}&nbsp;
+                    {word}
                   </motion.span>
                 ))}
               </motion.p>
