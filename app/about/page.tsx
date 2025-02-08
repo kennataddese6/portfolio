@@ -1,5 +1,7 @@
+"use client"
 import { AnimatedTestimonials } from "@/components/ui/animated-testimonials"
 import { InfiniteMovingCards } from "@/components/ui/infinite-moving-cards"
+import { motion } from "framer-motion"
 import { FaPlus } from "react-icons/fa"
 export default function Page() {
   const skills = [
@@ -82,11 +84,16 @@ export default function Page() {
         <div>
           <AnimatedTestimonials testimonials={testimonials} />
         </div>
-        <div className="flex items-center relative mx-3 md:mx-0">
-          <h1 className="text-6xl md:text-9xl text-white">3</h1>
+        <motion.div
+          className="flex items-center relative mx-3 md:mx-0"
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ duration: 0.5, delay: 0.3, type: "spring" }}
+        >
+          <motion.h1 className="text-6xl md:text-9xl text-white">3</motion.h1>
           <FaPlus className="absolute top-2 left-8 md:left-16 text-white md:text-xl" />
           <p className="text-white mx-4 font-thin">Years experience</p>
-        </div>
+        </motion.div>
       </div>
       <div className="h-auto w-full rounded-md flex flex-col   items-center justify-center relative overflow-hidden">
         <InfiniteMovingCards items={skills} direction="right" speed="slow" />
