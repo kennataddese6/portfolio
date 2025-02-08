@@ -19,6 +19,8 @@ export default {
         foreground: "var(--foreground)",
       },
       animation: {
+        scroll:
+          "scroll var(--animation-duration, 40s) var(--animation-direction, forwards) linear infinite",
         aurora: "aurora 60s linear infinite",
         fadein: "fadein 0.3s linear",
       },
@@ -29,6 +31,11 @@ export default {
           },
           to: {
             backgroundPosition: "350% 50%, 350% 50%",
+          },
+        },
+        scroll: {
+          to: {
+            transform: "translate(calc(-50% - 0.5rem))",
           },
         },
         fadein: {
@@ -45,10 +52,21 @@ export default {
   plugins: [
     addVariablesForColors,
     addVariablesBeamForColors,
+    addVariablesForColorsForInfinteMovingCards,
     require("tailwindcss-animate"),
   ],
 } satisfies Config
 function addVariablesForColors({ addBase, theme }: any) {
+  let allColors = flattenColorPalette(theme("colors"))
+  let newVars = Object.fromEntries(
+    Object.entries(allColors).map(([key, val]) => [`--${key}`, val]),
+  )
+
+  addBase({
+    ":root": newVars,
+  })
+}
+function addVariablesForColorsForInfinteMovingCards({ addBase, theme }: any) {
   let allColors = flattenColorPalette(theme("colors"))
   let newVars = Object.fromEntries(
     Object.entries(allColors).map(([key, val]) => [`--${key}`, val]),
