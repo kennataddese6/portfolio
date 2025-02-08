@@ -1,6 +1,43 @@
 import { AnimatedTestimonials } from "@/components/ui/animated-testimonials"
+import { InfiniteMovingCards } from "@/components/ui/infinite-moving-cards"
 import { FaPlus } from "react-icons/fa"
 export default function Page() {
+  const skills = [
+    {
+      name: "Next.js",
+    },
+    {
+      name: "React",
+    },
+    {
+      name: "Tailwind",
+    },
+    {
+      name: "HTML",
+    },
+    {
+      name: "CSS",
+    },
+    {
+      name: "JavaScript",
+    },
+    {
+      name: "TypeScript",
+    },
+    {
+      name: "Node.js",
+    },
+    {
+      name: "Express.js",
+    },
+    {
+      name: "Python",
+    },
+    {
+      name: "MongoDB",
+    },
+  ]
+
   const testimonials = [
     {
       quote:
@@ -50,6 +87,9 @@ export default function Page() {
           <FaPlus className="absolute top-2 left-8 md:left-16 text-white md:text-xl" />
           <p className="text-white mx-4 font-thin">Years experience</p>
         </div>
+      </div>
+      <div className="h-auto w-full rounded-md flex flex-col   items-center justify-center relative overflow-hidden">
+        <InfiniteMovingCards items={skills} direction="right" speed="slow" />
       </div>
     </div>
   )
