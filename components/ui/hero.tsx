@@ -7,27 +7,6 @@ import { MdOutlineDownload } from "react-icons/md"
 const Hero = () => {
   const words = ["Developer", "Engineer", "Designer"]
 
-  async function startPay() {
-    try {
-      const res = await fetch(
-        "https://196.188.120.3:38443/apiaccess/payment/gateway/create/order",
-
-        {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify({
-            title: "add your own title here", // Replace with your desired title
-            amount: "10", // Replace with your desired amount
-          }),
-        },
-      )
-      console.log(await res.json())
-    } catch (err) {
-      console.log("errorr", err)
-    }
-  }
   return (
     <div className=" h-screen bg-[url(/mobileherobg.png)] xl:bg-[url(/repear.jpeg)]  w-full bg-no-repeat bg-cover">
       <div className="h-5/6 xl:w-1/2 px-4 md:px-20  text-white flex items-center">
@@ -47,19 +26,14 @@ const Hero = () => {
             consistency
           </p>
           <div className="flex justify-center xl:justify-start">
-            {/*         <Link
+            <Link
               href={"https://www.upwork.com/freelancers/~013312695998cc584d"}
               target="_blank"
-            > */}
-            <button
-              onClick={() => {
-                startPay()
-              }}
-              className="bg-white text-black py-2 px-8 font-bold border-2 border-white text-sm"
             >
-              Hire Me
-            </button>
-            {/* </Link> */}
+              <button className="bg-white text-black py-2 px-8 font-bold border-2 border-white text-sm">
+                Hire Me
+              </button>
+            </Link>
             <Link
               href={"/KennaResume.pdf"}
               download={true}
