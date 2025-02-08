@@ -41,7 +41,7 @@ export default function Page() {
   return (
     <div className=" h-screen bg-[url(/mobileherobg.png)] xl:bg-[url(/aboutbg.png)]  w-full bg-no-repeat bg-cover 2xl:bg-y-80px">
       {" "}
-      <div className="flex justify-between flex-wrap-reverse pl-8 pr-48 pt-12 items-center">
+      <div className="flex justify-between flex-wrap-reverse md:pl-8 md:pr-48 md:pt-12 items-center">
         <AnimatedTestimonials testimonials={testimonials} />
         <div className="flex items-center relative">
           <h1 className="text-9xl text-white">3</h1>
