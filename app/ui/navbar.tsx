@@ -33,7 +33,11 @@ export default function Navbar() {
           showMobileNav ? "" : "hidden"
         }`}
       >
-        <Link href={"/"} className="no-underline">
+        <Link
+          href={"/"}
+          className="no-underline"
+          onClick={() => setShowMobileNav(false)}
+        >
           <li
             className={`py-4 md:py-0 border-t-2 border-b-2 border-neutral-800 md:border-none ${
               pathname === "/"
@@ -45,7 +49,11 @@ export default function Navbar() {
           </li>
         </Link>
 
-        <Link href={"/about"} className="no-underline">
+        <Link
+          href={"/about"}
+          className="no-underline"
+          onClick={() => setShowMobileNav(false)}
+        >
           <li
             className={` py-4 md:py-0  border-b-2 border-neutral-800 md:border-none ${
               pathname === "/about"
