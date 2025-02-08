@@ -41,8 +41,10 @@ export default function Page() {
   return (
     <div className=" h-screen bg-[url(/mobileherobg.png)] xl:bg-[url(/aboutbg.png)]  w-full bg-no-repeat bg-cover 2xl:bg-y-80px">
       {" "}
-      <div className="flex justify-between flex-wrap-reverse md:pl-8 md:pr-48 pt-24 md:pt-12 items-center">
-        <AnimatedTestimonials testimonials={testimonials} />
+      <div className="flex justify-between flex-wrap-reverse md:pl-8 md:pr-48 pt-24 md:pt-12 items-center ">
+        <div>
+          <AnimatedTestimonials testimonials={testimonials} />
+        </div>
         <div className="flex items-center relative mx-3 md:mx-0">
           <h1 className="text-6xl md:text-9xl text-white">3</h1>
           <FaPlus className="absolute top-2 left-8 md:left-16 text-white md:text-xl" />

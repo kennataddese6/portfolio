@@ -12,7 +12,7 @@ export default {
   theme: {
     extend: {
       backgroundPosition: {
-        "y-80px": "center -130px",
+        "y-80px": "center -100px",
       },
       colors: {
         background: "var(--background)",
