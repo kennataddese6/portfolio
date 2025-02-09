@@ -80,7 +80,7 @@ export default function Page() {
   return (
     <div className=" h-screen bg-[url(/mobileherobg.png)] xl:bg-[url(/aboutbg.png)]  w-full bg-no-repeat bg-cover 2xl:bg-y-80px">
       {" "}
-      <div className="flex justify-between flex-wrap-reverse md:pl-8 md:pr-48 pt-24 md:pt-12 items-center ">
+      <div className="flex justify-between flex-wrap-reverse md:pl-8 xl:pr-28 2xl:pr-48 pt-24 md:pt-12 items-center ">
         <div>
           <AnimatedTestimonials testimonials={testimonials} />
         </div>
