@@ -61,7 +61,7 @@ export default function Page() {
     )
   }
   return (
-    <div className="h-screen bg-[url(/mobileherobg.png)] xl:bg-[url(/projectsbg.png)]  w-full bg-no-repeat xl:bg-center">
+    <div className="h-screen xl:bg-[url(/projectsbg.png)]  w-full bg-no-repeat xl:bg-center">
       <div className="flex flex-1 pt-24 px-4">
         <div className="p-2 md:p-10 rounded-tl-2xl  flex-col gap-2 flex-1 w-full h-full ">
           <div className="w-full h-full  flex ">
