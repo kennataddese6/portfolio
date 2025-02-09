@@ -209,7 +209,7 @@ export default function Page() {
 const cards = [
   {
     description: "Corporate Project",
-    title: "Internet Banking for CBE",
+    title: "CBEIB",
     src: "/project1.png",
     ctaText: "View",
     ctaLink: "https://cbeib.vercel.app/",
