@@ -208,7 +208,7 @@ export default function Page() {
 }
 const cards = [
   {
-    description: "Complex Project",
+    description: "Corporate Project",
     title: "Internet Banking for CBE",
     src: "/project1.png",
     ctaText: "View",
@@ -231,7 +231,7 @@ const cards = [
     },
   },
   {
-    description: "Mid-Level Project",
+    description: "Freelance Project",
     title: "MT Custom Lights",
     src: "/project2.png",
     ctaText: "View",
