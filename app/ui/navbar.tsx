@@ -64,9 +64,21 @@ export default function Navbar() {
             About
           </li>
         </Link>
-        <li className="text-neutral-600 py-4 md:py-0  border-b-2 border-neutral-800 md:border-none">
-          Projects
-        </li>
+        <Link
+          href={"/projects"}
+          className="no-underline"
+          onClick={() => setShowMobileNav(false)}
+        >
+          <li
+            className={` py-4 md:py-0  border-b-2 border-neutral-800 md:border-none ${
+              pathname === "/projects"
+                ? "text-white animate-fadein"
+                : "text-neutral-600"
+            }`}
+          >
+            Projects
+          </li>
+        </Link>
         <li className="text-neutral-600 py-4 md:py-0  border-b-2 border-neutral-800 md:border-none">
           Contact
         </li>
