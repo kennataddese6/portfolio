@@ -240,15 +240,17 @@ const cards = [
     content: () => {
       return (
         <p>
-          Babu Maan, a legendary Punjabi singer, is renowned for his soulful
-          voice and profound lyrics that resonate deeply with his audience. Born
-          in the village of Khant Maanpur in Punjab, India, he has become a
-          cultural icon in the Punjabi music industry. <br /> <br /> His songs
-          often reflect the struggles and triumphs of everyday life, capturing
-          the essence of Punjabi culture and traditions. With a career spanning
-          over two decades, Babu Maan has released numerous hit albums and
-          singles that have garnered him a massive fan following both in India
-          and abroad.
+          I developed a clean and visually engaging landing page for a UK-based
+          car lights selling company. The page features smooth scroll-based
+          animations, providing an immersive and interactive user experience.
+          This project not only showcases my ability to create aesthetically
+          pleasing designs but also highlights my efficiency in developing
+          beautiful landing pages quickly and effectively.
+          <br /> <br /> I harnessed my expertise in Next.js, React, HTML5, CSS3,
+          JavaScript, and Tailwind to bring this project to life. These
+          technologies allowed me to build a dynamic and responsive application
+          that meets modern web standards, ensuring a seamless user experience
+          and robust functionality.
         </p>
       )
     },
