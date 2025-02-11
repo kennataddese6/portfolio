@@ -23,6 +23,7 @@ export default {
           "scroll var(--animation-duration, 40s) var(--animation-direction, forwards) linear infinite",
         aurora: "aurora 60s linear infinite",
         fadein: "fadein 0.3s linear",
+        darken: "darken 2s infinite alternate",
       },
       keyframes: {
         aurora: {
@@ -32,6 +33,10 @@ export default {
           to: {
             backgroundPosition: "350% 50%, 350% 50%",
           },
+        },
+        darken: {
+          "0%, 100%": { filter: "brightness(1)" }, // Normal state
+          "50%": { filter: "brightness(0.7)" }, // Darker effect
         },
         scroll: {
           to: {
