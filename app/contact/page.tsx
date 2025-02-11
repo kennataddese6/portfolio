@@ -1,6 +1,7 @@
 "use client"
 import emailjs from "@emailjs/browser"
 import { motion } from "framer-motion"
+import Link from "next/link"
 import { useRef, useState } from "react"
 import { FaGithub, FaLinkedin } from "react-icons/fa"
 import { FaRegMessage } from "react-icons/fa6"
@@ -77,20 +78,24 @@ export default function Page() {
             animate={{ translateX: 0, type: "spring" }}
             transition={{ delay: 0.2, duration: 0.4, type: "spring" }}
           >
-            <FiUserPlus
-              className="mt-12 hover:text-blue-600 cursor-pointer"
-              fontSize={20}
-            />
+            <Link href={"https://wa.me/251991374186"} target="_blank">
+              <FiUserPlus
+                className="mt-12 hover:text-blue-600 cursor-pointer"
+                fontSize={20}
+              />
+            </Link>
           </motion.div>
           <motion.div
             initial={{ translateX: 120 }}
             animate={{ translateX: 0, type: "spring" }}
             transition={{ delay: 0.2, duration: 0.6, type: "spring" }}
           >
-            <FaRegMessage
-              className="mt-12 hover:text-blue-600 cursor-pointer"
-              fontSize={20}
-            />
+            <Link href="mailto:kennataddese6@gmail.com?subject=Hello&body=I%20want%20to%20talk%20to%20you">
+              <FaRegMessage
+                className="mt-12 hover:text-blue-600 cursor-pointer"
+                fontSize={20}
+              />
+            </Link>
           </motion.div>
           <motion.div
             initial={{ translateX: 120 }}
@@ -108,14 +113,27 @@ export default function Page() {
             animate={{ translateX: 0, type: "spring" }}
             transition={{ delay: 0.2, duration: 1, type: "spring" }}
           >
-            <FaGithub
-              className="mt-12 hover:text-blue-600 cursor-pointer"
-              fontSize={20}
-            />
-            <FaLinkedin
-              className="mt-12 hover:text-blue-600 cursor-pointer"
-              fontSize={20}
-            />
+            <Link href={"https://github.com/kennataddese6/"} target="_blank">
+              <FaGithub
+                className="mt-12 hover:text-blue-600 cursor-pointer"
+                fontSize={20}
+              />
+            </Link>
+          </motion.div>
+          <motion.div
+            initial={{ translateX: 120 }}
+            animate={{ translateX: 0, type: "spring" }}
+            transition={{ delay: 0.2, duration: 1.2, type: "spring" }}
+          >
+            <Link
+              href={"https://www.linkedin.com/in/kenna-taddese-905a80233/"}
+              target="_blank"
+            >
+              <FaLinkedin
+                className="mt-12 hover:text-blue-600 cursor-pointer"
+                fontSize={20}
+              />
+            </Link>
           </motion.div>
         </div>
       </div>
