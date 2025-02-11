@@ -1,10 +1,12 @@
+"use client"
+import { motion } from "framer-motion"
 import { FaGithub, FaLinkedin } from "react-icons/fa"
 import { FaRegMessage } from "react-icons/fa6"
 import { FiUserPlus } from "react-icons/fi"
 import { IoLocationOutline } from "react-icons/io5"
 export default function Page() {
   return (
-    <div className=" h-screen bg-[url(/mobileherobg.png)] xl:bg-[url(/contactbg.png)]  w-full bg-no-repeat bg-cover 2xl:bg-y-80px">
+    <div className=" h-screen bg-[url(/mobileherobg.png)] xl:bg-[url(/contactbg.png)]  w-full bg-no-repeat bg-cover 2xl:bg-y-80px overflow-x-hidden">
       <div className="flex justify-between pt-24 md:pt-36 md:px-20">
         <div className="w-full mx-3">
           <h1 className="text-white text-2xl font-bold text-center md:text-start">
@@ -32,26 +34,50 @@ export default function Page() {
           </button>
         </div>
         <div className="text-white  md:flex flex-col items-center hidden">
-          <FiUserPlus
-            className="mt-12 hover:text-blue-600 cursor-pointer"
-            fontSize={20}
-          />
-          <FaRegMessage
-            className="mt-12 hover:text-blue-600 cursor-pointer"
-            fontSize={20}
-          />
-          <IoLocationOutline
-            className="mt-12 hover:text-green-600 cursor-pointer"
-            fontSize={22}
-          />
-          <FaGithub
-            className="mt-12 hover:text-blue-600 cursor-pointer"
-            fontSize={20}
-          />
-          <FaLinkedin
-            className="mt-12 hover:text-blue-600 cursor-pointer"
-            fontSize={20}
-          />
+          <motion.div
+            initial={{ translateX: 120 }}
+            animate={{ translateX: 0, type: "spring" }}
+            transition={{ delay: 0.2, duration: 0.4, type: "spring" }}
+          >
+            <FiUserPlus
+              className="mt-12 hover:text-blue-600 cursor-pointer"
+              fontSize={20}
+            />
+          </motion.div>
+          <motion.div
+            initial={{ translateX: 120 }}
+            animate={{ translateX: 0, type: "spring" }}
+            transition={{ delay: 0.2, duration: 0.6, type: "spring" }}
+          >
+            <FaRegMessage
+              className="mt-12 hover:text-blue-600 cursor-pointer"
+              fontSize={20}
+            />
+          </motion.div>
+          <motion.div
+            initial={{ translateX: 120 }}
+            animate={{ translateX: 0, type: "spring" }}
+            transition={{ delay: 0.2, duration: 0.8, type: "spring" }}
+          >
+            <IoLocationOutline
+              className="mt-12 hover:text-green-600 cursor-pointer"
+              fontSize={22}
+            />
+          </motion.div>
+          <motion.div
+            initial={{ translateX: 120 }}
+            animate={{ translateX: 0, type: "spring" }}
+            transition={{ delay: 0.2, duration: 1, type: "spring" }}
+          >
+            <FaGithub
+              className="mt-12 hover:text-blue-600 cursor-pointer"
+              fontSize={20}
+            />
+            <FaLinkedin
+              className="mt-12 hover:text-blue-600 cursor-pointer"
+              fontSize={20}
+            />
+          </motion.div>
         </div>
       </div>
     </div>
