@@ -265,15 +265,17 @@ const cards = [
     content: () => {
       return (
         <p>
-          Metallica, an iconic American heavy metal band, is renowned for their
-          powerful sound and intense performances that resonate deeply with
-          their audience. Formed in Los Angeles, California, they have become a
-          cultural icon in the heavy metal music industry. <br /> <br /> Their
-          songs often reflect themes of aggression, social issues, and personal
-          struggles, capturing the essence of the heavy metal genre. With a
-          career spanning over four decades, Metallica has released numerous hit
-          albums and singles that have garnered them a massive fan following
-          both in the United States and abroad.
+          I developed a comprehensive web application for Essence, a medical
+          equipment selling company located in my hometown. This application
+          features a clean and visually appealing landing page, designed to
+          attract and engage potential customers. The intuitive design and
+          seamless functionality ensure a user-friendly experience, making it
+          easy for customers to navigate and find the medical equipment they
+          need. <br /> <br /> I leveraged my expertise in React, Next.js,
+          Bootstrap, and CSS3 to build this remarkable project. These
+          technologies empowered me to create a dynamic and visually appealing
+          web application that meets modern web standards, ensuring both
+          functionality and a seamless user experience.
         </p>
       )
     },
@@ -287,14 +289,16 @@ const cards = [
     content: () => {
       return (
         <p>
-          Led Zeppelin, a legendary British rock band, is renowned for their
-          innovative sound and profound impact on the music industry. Formed in
-          London in 1968, they have become a cultural icon in the rock music
-          world. <br /> <br /> Their songs often reflect a blend of blues, hard
-          rock, and folk music, capturing the essence of the 1970s rock era.
-          With a career spanning over a decade, Led Zeppelin has released
-          numerous hit albums and singles that have garnered them a massive fan
-          following both in the United Kingdom and abroad.
+          I developed a robust e-commerce sales page website for 125CODING, a
+          UK-based company. This project features a comprehensive product
+          showcase, an intuitive add-to-cart functionality, and a seamless
+          checkout process for purchasing. The goal was to create a
+          user-friendly and efficient online shopping experience, ensuring
+          customers can easily browse, select, and purchase products. <br />{" "}
+          <br /> I gained valuable experience utilizing Shopify as a storefront
+          to manage products and payments. Additionally, I integrated
+          technologies such as Next.js, Tailwind, TypeScript, and more to create
+          a seamless and efficient e-commerce platform.
         </p>
       )
     },
@@ -308,15 +312,17 @@ const cards = [
     content: () => {
       return (
         <p>
-          &quot;Aawarapan&quot;, a Bollywood movie starring Emraan Hashmi, is
-          renowned for its intense storyline and powerful performances. Directed
-          by Mohit Suri, the film has become a significant work in the Indian
-          film industry. <br /> <br /> The movie explores themes of love,
-          redemption, and sacrifice, capturing the essence of human emotions and
-          relationships. With a gripping narrative and memorable music,
-          &quot;Aawarapan&quot; has garnered a massive fan following both in
-          India and abroad, solidifying Emraan Hashmi&apos;s status as a
-          versatile actor.
+          I developed an innovative Barcode Integrated Student Clearance System
+          for a University to streamline and enhance their clearance process.
+          This system features real-time updates and leverages barcode
+          technology to scan and retrieve information instantly across all
+          devices. By incorporating this system, the University significantly
+          improved the efficiency and accuracy of their clearance procedures.
+          <br /> <br />I gained extensive experience in React, Redux,
+          Express.js, and Node.js while building this project. These
+          technologies allowed me to create a highly efficient and dynamic
+          application, showcasing my ability to develop robust and scalable
+          solutions.
         </p>
       )
     },
