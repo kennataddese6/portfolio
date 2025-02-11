@@ -103,7 +103,7 @@ export const ModalBody = ({
           <motion.div
             ref={modalRef}
             className={cn(
-              "min-h-[50%] max-h-[90%] md:max-w-[40%] bg-white dark:bg-neutral-950 border border-gray-200 border-transparent dark:border-neutral-800 md:rounded-2xl relative z-50 flex flex-col flex-1 overflow-hidden dark:border-gray-800",
+              "min-h-[60%] max-h-[90%] md:max-w-[40%]  dark:bg-transparent border-none  border-transparent  md:rounded-2xl relative z-50 flex items-center justify-center flex-col flex-1 overflow-hidden dark:border-gray-800",
               className,
             )}
             initial={{
@@ -129,7 +129,6 @@ export const ModalBody = ({
               damping: 15,
             }}
           >
-            <CloseIcon />
             {children}
           </motion.div>
         </motion.div>
