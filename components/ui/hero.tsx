@@ -10,7 +10,7 @@ const Hero = () => {
 
   return (
     <>
-      <div className=" h-screen bg-[url(/mobileherobg.png)] xl:bg-[url(/repear.jpeg)]  w-full bg-no-repeat bg-cover">
+      <div className=" h-screen bg-[url(/mobileherobg.png)] xl:bg-[url(/repear.jpeg)]  w-full bg-no-repeat bg-cover overflow-x-hidden">
         <div className="h-5/6 xl:w-1/2 px-4 md:px-20  text-white flex items-center">
           <div className="flex flex-col gap-3 md:gap-4">
             <p className="text-center xl:text-start text-xs m-0 p-0 text-neutral-100 md:text-white">
