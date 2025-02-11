@@ -118,7 +118,7 @@ export default function Page() {
                     </h3>
                     <div className="text-base !m-0 !p-0 font-normal">
                       <span className="text-slate-500 ">
-                        This is where I reside in the center of Addis Ababa
+                        I reside in the heart of Addis Ababa, Ethiopia
                       </span>
                     </div>
                     <iframe
