@@ -2,7 +2,7 @@
 import emailjs from "@emailjs/browser"
 import { motion } from "framer-motion"
 import Link from "next/link"
-import { useRef, useState } from "react"
+import { useRef } from "react"
 import { FaGithub, FaLinkedin } from "react-icons/fa"
 import { FaRegMessage } from "react-icons/fa6"
 import { FiUserPlus } from "react-icons/fi"
@@ -10,7 +10,6 @@ import { IoLocationOutline } from "react-icons/io5"
 import { toast } from "sonner"
 export default function Page() {
   const form: any = useRef(null)
-  const [location, setLocation] = useState(false)
   const sendEmail = (formData: FormData) => {
     try {
       emailjs.send(
@@ -88,7 +87,7 @@ export default function Page() {
           <motion.div
             initial={{ translateX: 120 }}
             animate={{ translateX: 0, type: "spring" }}
-            transition={{ delay: 0.2, duration: 0.6, type: "spring" }}
+            transition={{ delay: 0.4, duration: 0.6, type: "spring" }}
           >
             <Link href="mailto:kennataddese6@gmail.com?subject=Hello&body=I%20want%20to%20talk%20to%20you">
               <FaRegMessage
@@ -100,18 +99,14 @@ export default function Page() {
           <motion.div
             initial={{ translateX: 120 }}
             animate={{ translateX: 0, type: "spring" }}
-            transition={{ delay: 0.2, duration: 0.8, type: "spring" }}
-            onClick={() => setLocation(true)}
-            className={` ${
-              location && "absolute text-8xl top-1/2 left-1/2 -translate-y-1/2"
-            }`}
+            transition={{ delay: 0.6, duration: 0.8, type: "spring" }}
           >
-            <IoLocationOutline className="mt-12 hover:text-green-600 cursor-pointer" />
+            <IoLocationOutline className="mt-12 hover:text-green-600 cursor-pointer text-2xl" />
           </motion.div>
           <motion.div
             initial={{ translateX: 120 }}
             animate={{ translateX: 0, type: "spring" }}
-            transition={{ delay: 0.2, duration: 1, type: "spring" }}
+            transition={{ delay: 0.8, duration: 1, type: "spring" }}
           >
             <Link href={"https://github.com/kennataddese6/"} target="_blank">
               <FaGithub
@@ -123,7 +118,7 @@ export default function Page() {
           <motion.div
             initial={{ translateX: 120 }}
             animate={{ translateX: 0, type: "spring" }}
-            transition={{ delay: 0.2, duration: 1.2, type: "spring" }}
+            transition={{ delay: 1, duration: 1.2, type: "spring" }}
           >
             <Link
               href={"https://www.linkedin.com/in/kenna-taddese-905a80233/"}
