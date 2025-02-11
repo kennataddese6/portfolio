@@ -216,16 +216,17 @@ const cards = [
     content: () => {
       return (
         <p>
-          Lana Del Rey, an iconic American singer-songwriter, is celebrated for
-          her melancholic and cinematic music style. Born Elizabeth Woolridge
-          Grant in New York City, she has captivated audiences worldwide with
-          her haunting voice and introspective lyrics. <br /> <br /> Her songs
-          often explore themes of tragic romance, glamour, and melancholia,
-          drawing inspiration from both contemporary and vintage pop culture.
-          With a career that has seen numerous critically acclaimed albums, Lana
-          Del Rey has established herself as a unique and influential figure in
-          the music industry, earning a dedicated fan base and numerous
-          accolades.
+          I spearheaded the development of an advanced Internet Banking system
+          for the Commercial Bank of Ethiopia, the largest bank in the country.
+          This groundbreaking project establishes a robust foundation that will
+          save the bank millions of dollars annually in licensing fees
+          previously paid to Temenos, a Swiss-based company. <br /> <br /> As a
+          Frontend Developer on this project, I was tasked with designing and
+          developing the client-side application. My primary focus was to create
+          an intuitive and user-friendly interface that seamlessly handles
+          various types of transfers, payments, and a multitude of other banking
+          functionalities. This application ensures a smooth, efficient, and
+          secure banking experience for all users.
         </p>
       )
     },
