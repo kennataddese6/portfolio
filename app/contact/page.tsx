@@ -42,7 +42,7 @@ export default function Page() {
             fontSize={20}
           />
           <IoLocationOutline
-            className="mt-12 hover:text-blue-600 cursor-pointer"
+            className="mt-12 hover:text-green-600 cursor-pointer"
             fontSize={22}
           />
           <FaGithub
