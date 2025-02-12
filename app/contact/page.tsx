@@ -105,7 +105,10 @@ export default function Page() {
           >
             <Modal>
               <ModalTrigger>
-                <IoLocationOutline className="mt-12 hover:text-green-600 cursor-pointer text-2xl" />
+                <IoLocationOutline
+                  className="mt-12 hover:text-green-600 cursor-pointer text-2xl"
+                  color="white"
+                />
               </ModalTrigger>
               <ModalBody>
                 <PinContainer
