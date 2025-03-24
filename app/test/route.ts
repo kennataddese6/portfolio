@@ -1,8 +1,8 @@
 import { headers } from "next/headers"
 import { NextResponse } from "next/server"
 
-export function GET() {
-  const header = headers()
+export async function GET() {
+  const header = await headers()
 
   // Extract key data
   const clientIP = header.get("x-forwarded-for")?.split(",")[0] || "Unknown"
