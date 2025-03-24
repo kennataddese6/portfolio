@@ -1,8 +1,10 @@
-import { NextRequest, NextResponse } from "next/server"
+import { headers } from "next/headers"
+import { NextResponse } from "next/server"
 
-export function GET(req: NextRequest) {
-  const forwardedFor = req.headers.get("x-forwarded-for")
+export async function GET() {
+  const header = await headers() // No need for `await`
+  const forwardedFor = header.get("x-forwarded-for")
   const clientIP = forwardedFor ? forwardedFor.split(",")[0] : "Unknown"
 
-  return new NextResponse(`Your IP: ${clientIP}`)
+  return new NextResponse(`Your new IP: ${clientIP}`)
 }
